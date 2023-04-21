@@ -9,7 +9,7 @@ body {background-image:url(/imagenes/rick\ and\ morty1.png);
 
 header main footer { padding: 20px;}
 
-.div-logo { background-color:  rgba(27, 163, 163, 0.548);
+.div-logo { background-color:  rgba(20, 173, 173, 0.548);
             border-radius: 30px;
             display: flex;
             justify-content: space-between;
@@ -21,16 +21,17 @@ header main footer { padding: 20px;}
 .imagen-logo2 {width: 150px; 
                height: 200px;}
 
-h1 {font-size: 100px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     color: crimson;
-     border-color: coral;
-     position: absolute;top: 20%;left: 25%;}
+h1 {font-size: 60px;
+     font-family: 'press Start 2p', sans-serif;
+     color: rgb(226, 250, 11);
+     text-shadow: 2px 2px 0 blue;
+     border-color: rgb(238, 233, 232);
+     position: absolute;top: 20%;left: 20%;}
 
 .div-nav1 {background-color: rgba(27, 163, 163, 0.548);
            border-radius: 30px;
            margin: 20px;
-          padding: 20px;} 
+           padding: 20px;} 
 
 .div-nav1 ul {display: flex; 
               justify-content: space-evenly;
@@ -38,7 +39,8 @@ h1 {font-size: 100px;
               list-style: none;} 
 
 .div-nav1 ul li {font-size: 30px;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-style: italic;
                 }
 
@@ -46,7 +48,7 @@ h1 {font-size: 100px;
                        }              
 
 .div-nav1 ul li a {text-decoration: none;
-                   color:crimson ;
+                   color:rgb(226, 250, 11); 
                    }
                    
 .div-nav1 ul li a:hover { color: rgb(231, 187, 173);
@@ -64,67 +66,89 @@ h1 {font-size: 100px;
 
 .Sinopsis:hover{background-color:rgba(86, 77, 143, 0.788);}
 
-.Sinopsis h2 {color: crimson; 
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
+.Sinopsis h2 {color:rgb(226, 250, 11);
+              text-shadow: 2px 2px 0 blue; 
+              font-family: "press start 2p", Verdana, Geneva, Tahoma, sans-serif;
               font-size: 50px;
               padding: 20px;}
 
 .Sinopsis p {color: rgb(255, 218, 196);
              font-size: 25px;
              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             font-style: italic;
+             text-shadow: 1px 1px 0 rgb(167, 117, 117);
+             padding-bottom: 20px;}
+
+.Sinopsis h4{color: rgb(255, 218, 196);
+             font-size: 20px;
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             text-shadow: 1px 1px 0 rgb(167, 117, 117)}
 
 .Characters {background-color: rgba(27, 163, 163, 0.548);
              border-radius: 30px;
              margin: 20px; 
              padding: 20px}
 
-.Characters h2 {color: crimson;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+.Characters h2 {color: rgb(226, 250, 11);
+                font-family:"press start 2p", Verdana, Geneva, Tahoma, sans-serif;
+                text-shadow: 2px 2px 0 blue;
                 font-size: 50px;
                 padding: 20px}
 
 #grid-item {display: flex; 
-             justify-content: space-evenly; 
-             align-items: center;
-             -webkit-perspective: 800;
-             perspective: 800;
+            justify-content: space-evenly; 
+            align-items: center;
+            flex-wrap:wrap ;
+            -webkit-perspective: 800;
+            perspective: 800
+            
              }
 
-.grid-item {width: 300px;
-             height: 450px;
+.grid-item {width: 250px;
+             height: 350px;
              position: relative;
              transform-style:preserve-3d ;
-             transition: .7s ease ;}
+             transition: .7s ease ;
+             margin: 10px;
+            }
 
 .grid-front{ width:100%;
              height: 100%;
              position: absolute;top: 0;left: 0;
-             border-radius: 30px;
-             box-shadow: 8px 10px 20px rgba(86, 77, 143, 0.788);
-             overflow: hidden;
-             cursor: pointer;}
-
-.grid-front {backface-visibility: hidden;}
+             border-radius:30px;
+             box-shadow:8px 10px 20px rgba(86, 77, 143, 0.788);
+             overflow:hidden;
+             cursor:pointer;
+             }
 
 .grid-front img {width: 100%;
                  height: 100%;
                  transition: 0.5s;
-                 object-fit: cover;}
+                 object-fit: cover;
+                 border-radius:30px ;}
 
 .grid-item:hover{ transform: rotateY(180deg)}
 
 .grid-back {  width: 100%;
               height: 100%;
-              font-size: 40px;
-              color: rgb(231, 187, 173);
-              position: absolute; top: 0; left:0 ;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-style: italic;
+              color: rgb(255, 212, 199);
+              text-shadow: 1px 1px 0 rgb(167, 117, 117);
+              position:absolute;
               background-color: rgba(86, 77, 143, 0.74);
               padding: 10px;
-              border-radius: 25px;}
+              border-radius: 25px;
+              transform: rotateY(180deg)}
+             
+.grid-back h3{margin-top: 80px; font-size: 25px;padding-bottom: 10px;}
 
-.grid-back {transform: rotateY(180deg);
-            backface-visibility: hidden;}
+.grid-back p{font-size: 20px; padding-top: 5px;}
+
+.grid-back { backface-visibility: hidden}
 
 .grid-back {text-align: center;}
 
@@ -133,25 +157,27 @@ h1 {font-size: 100px;
                     margin: 20px; 
                     padding: 20px;
                     display: flex;
-                    justify-content:space-around ;
+                    justify-content:space-evenly ;
                     align-items: center;}
 
-.Watch-the-series h2 {color: crimson;
-                      font-family: Verdana, Geneva, Tahoma, sans-serif;
-                      font-size: 30px;
+.Watch-the-series h2 {color: rgb(226, 250, 11);
+                      font-family:"press start 2p", Verdana, Geneva, Tahoma, sans-serif;
+                      text-shadow: 2px 2px 0 blue;
+                      font-size: 25px;
                       padding: 20px;}
                
 .Watch-the-series1 img{width: 80px; 
                        height: 55px;
                        border-radius: 15px;
-                       margin-left: 20px;} 
+                       margin-left: 10px;} 
 
 .Watch-the-series1 img:hover {transform: scale(1.2);}
 
-.related-web {color: crimson;
+.related-web {color:rgb(226, 250, 11);;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
+              text-shadow: 2px 2px 0 blue;
               font-size:25px;
-              padding: 20px}
+              padding: 10px}
 
 .imdb img {width: 85px;
            height: 60px;
@@ -179,7 +205,7 @@ footer {background-color: rgba(27, 163, 163, 0.548);
 
 .div-footer1 ul {list-style: none;
                 font-size: 15px; 
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
                 Geneva, Verdana, sans-serif;
                 margin: 5px;}
 
@@ -188,6 +214,7 @@ footer {background-color: rgba(27, 163, 163, 0.548);
 .creator {font-size: 20px; 
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
          Geneva, Verdana, sans-serif;
+         font-style: italic;
          }
 
 .div-footer2 ul {list-style:none;}
@@ -195,17 +222,20 @@ footer {background-color: rgba(27, 163, 163, 0.548);
 .div-footer2 ul li { margin: 15px; 
                      display: flex; 
                      align-items: center;
-                     justify-content: center;}
+                     justify-content: center;
+                     column-gap: 2px;}
 
 .div-footer2 ul li a {text-decoration: none;
                      font-size: 18px; 
                      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
                      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                     font-style: italic;
                      border: 20px; 
                      padding: 10px;
                      color: black;}
                
 .div-footer2 ul li a:hover{ background-color: rgb(82, 82, 165);
+                            color:  rgb(255, 218, 196);
                             border-radius: 20px;}
 
 .div-footer2 ul li:hover{transform: scale(1.2)}
@@ -213,13 +243,13 @@ footer {background-color: rgba(27, 163, 163, 0.548);
 .div-footer2 ul li svg {top: 30%;}
 
 @media (max-width:880px) {
-     h1 {font-size: 70px;}
-     .Sinopsis h2 { font-size: 50px;}
-     .Characters h2 {font-size: 50px}
+      h1 {font-size: 38px;}
+     .Sinopsis h2 { font-size: 40px;}
+     .Characters h2 {font-size: 40px}
 }
 
 @media(max-width: 480px) {
-h1 {font-size: 20px; top: 12%;left: 33%;}
+h1 {font-size: 20px; top: 12%;left: 20%;}
 
 .imagen-logo1 {width: 100px;
                height: 170px;}
@@ -237,8 +267,8 @@ h1 {font-size: 20px; top: 12%;left: 33%;}
 .div-nav1 nav ul li {font-size: 20px;}
 .Sinopsis p { font-size: 15px;}
 
-.grid-front {width: 120px;
-             height: 250px; 
+.grid-front {width: 220px;
+             height: 350px; 
              flex-direction: column; 
              align-items: center; }
 
